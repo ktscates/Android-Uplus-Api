@@ -6,4 +6,6 @@
     <string name="pwd_text">Password</string>
     <string name="register_text">Register User</string>
     <string name="register_btn">Register</string>
+    <string name="login_text">Login User</string>
+    <string name="login_btn">Login</string>
 </resources>

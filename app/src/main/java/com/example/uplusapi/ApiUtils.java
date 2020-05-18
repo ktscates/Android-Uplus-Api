@@ -1,10 +1,16 @@
 package com.example.uplusapi;
 
-public class ApiUtils {
+import retrofit2.Call;
+import retrofit2.http.POST;
 
-    public static final String BASE_URL = "http://localhost:8000/api/";
+public interface ApiUtils {
 
-    public static UserService getUserService(){
-        return RetrofitClient.getClient(BASE_URL).create(UserService.class);
-    }
+    @POST("register")
+    Call<Register> register();
+
+    @POST("login")
+    Call<Login> login();
+
+
 }
+
